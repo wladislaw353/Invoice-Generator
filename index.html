@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.min.css?v1">
+    <meta name="theme-color" content="#fff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Test project by Vladyslav Prokop">
+    <title>Andulka Invoice Test</title>
+    <meta name="robots" content="noindex, nofollow">
+</head>
+
+<body>
+
+    <main>
+
+        <section class="upload-data">
+            <h2>Add new users</h2>
+            <p>Upload .xlsx file to add new users to database</p>
+            <form enctype="multipart/form-data" id="create">
+                <input name="file" type="file">
+                <button class="btn">Create users</button>
+            </form>
+            <span></span>
+        </section>
+
+        <section class="invoice-list">
+            <h2>Generating invoices</h2>
+            <p>Upload .xlsx file to generate invoices</p>
+            <form enctype="multipart/form-data" id="generate">
+                <input name="file" type="file">
+                <button class="btn">Generate</button>
+            </form>
+            <span></span>
+            <div id="invoices"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <span>by Vladyslav Prokop</span>
+    </footer>
+
+    <script src="js/main.js?v1"></script>
+</body>
+
+</html>

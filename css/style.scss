@@ -1,0 +1,104 @@
+@import '_default.scss';
+@import '_media-queries.scss';
+
+
+body {
+    background: linear-gradient(135deg, #4AB1FF, #2D5CFE);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+main {
+    padding: 0 15px;
+}
+
+.btn {
+    all: unset;
+    color: #fff;
+    cursor: pointer;
+    padding: 7px 14px;
+    border-radius: 5px;
+    letter-spacing: 0.3px;
+    background: linear-gradient(135deg, #1798fb 0%, #2D5CFE 100%);
+    transition: all .3s ease;
+    &:active {
+        transform: scale(.95);
+    }
+}
+
+a {
+    color: #3C87FF;
+    padding: 7px 14px;
+    background: #3c87ff14;
+    border-radius: 5px;
+    transition: all .3s ease;
+    white-space: nowrap;
+    &:hover {
+        background: #3c87ff38;
+    }
+    &:active {
+        transform: scale(.95);
+    }
+}
+
+input[type=file]::-webkit-file-upload-button,
+input[type=file]::file-selector-button {
+    all: unset;
+    color: #fff;
+    cursor: pointer;
+    padding: 7px 11px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #1798fb 0%, #2D5CFE 100%);
+    margin-right: 10px;
+}
+
+section {
+    max-width: 600px;
+    padding: 30px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+    p {
+        margin: 10px 0;
+        opacity: .5;
+    }
+    form {
+        margin-top: 30px;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        @include _500 {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        & + span {
+            margin-top: 15px;
+            display: block;
+        }
+    }
+    #invoices {
+        .item {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            @include _500 {
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+            span {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #fff;
+}
